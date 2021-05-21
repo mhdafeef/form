@@ -50,8 +50,10 @@
 	box-sizing: border-box;
 }
 
-body, html {
-	height: 100%;
+body {
+    position: relative;
+    top: -59px !important;
+    height: 100%;
 	font-family: Poppins-Regular, sans-serif;
 }
 
@@ -135,7 +137,26 @@ label {
   margin: 0;
 }
 
+/*-----------Google translater-----------*/
+
+iframe.skiptranslate {
+display: none; !important;
+}
+.skiptranslate.goog-te-gadget select {
+position:relative !important;
+top: 70px !important;
+left: 55% !important;
+font-weight: bold !important;
+padding: 8px !important;
+border-radius: 5px !important;
+}
+.skiptranslate.goog-te-gadget span {
+display: none !important;
+}
+
+
 /*---------------------------------------------*/
+
 button {
 	outline: none !important;
 	border: none;
@@ -337,7 +358,7 @@ textarea.input100 {
 }
 
 
-/*------------------------------------------------------------------*/
+/*----Remove UP & Down arrow in number field-----*/
 
 
 input::-webkit-outer-spin-button,
@@ -522,6 +543,7 @@ label.radio2{
     width: 50%;
     padding: 110px 30px 55px 30px;
   }
+    
 
   .contact100-more {
     width: 50%;
